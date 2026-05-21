@@ -6,22 +6,25 @@
   <title>S1000D for Beginners</title>
   <style>
     :root {
-      --bg: #e9dfcf;
-      --bg-alt: #e1d6c4;
-      --bg-card: #ded3c1;
-      --bg-card-2: #d8ccb8;
-      --bg-card-3: #f6efe3;
-      --bg-card-4: #efe5d7;
-      --bg-card-5: #e0d1bd;
-      --bg-study: #d7cfbf;
-      --bg-study-2: #cfc4b0;
-      --bg-active: #7a3e2b;
-      --text: #1c1713;
-      --text-soft: #4d453f;
-      --text-muted: #5e554c;
-      --accent: #8a3a24;
-      --accent-soft: #e7c7b0;
-      --border: #1c1713;
+      --bg: #ffffff;
+      --bg-alt: #f6f6f2;
+      --bg-card: #ffffff;
+      --bg-card-2: #f8f8f4;
+      --bg-card-3: #ffffff;
+      --bg-card-4: #fffaf0;
+      --bg-card-5: #f6f6f2;
+      --bg-study: #fff4c7;
+      --bg-study-2: #fffaf0;
+      --bg-active: #1f5f5b;
+      --text: #151515;
+      --text-soft: #303030;
+      --text-muted: #555555;
+      --accent: #1f5f5b;
+      --accent-soft: #e8f1ef;
+      --border: #d8d8d8;
+      --strong-line: #151515;
+      --s1000d: #fff4c7;
+      --s1000d-line: #eadb91;
       --max: 1120px;
     }
 
@@ -47,7 +50,7 @@
       top: 0;
       z-index: 20;
       background: var(--bg);
-      border-bottom: 2px solid var(--border);
+      border-bottom: 1px solid var(--border);
     }
 
     .header-inner {
@@ -77,7 +80,7 @@
       display: flex;
       gap: 14px;
       font-size: 12px;
-      color: #3f3933;
+      color: var(--text-muted);
       flex-wrap: wrap;
     }
 
@@ -88,8 +91,8 @@
     nav a:hover { color: var(--accent); }
 
     section { padding: 46px 0; }
-    .border-top { border-top: 2px solid var(--border); }
-    .border-bottom { border-bottom: 2px solid var(--border); }
+    .border-top { border-top: 1px solid var(--border); }
+    .border-bottom { border-bottom: 1px solid var(--border); }
     .bg-alt { background: var(--bg-alt); }
 
     .hero-grid,
@@ -139,7 +142,7 @@
     .part-btn,
     .lesson-btn,
     .answer-btn {
-      border: 2px solid var(--border);
+      border: 1px solid var(--strong-line);
       background: transparent;
       color: var(--text);
       padding: 8px 14px;
@@ -167,14 +170,14 @@
     .resource-card,
     .meta-box,
     .lesson-detail-box {
-      border: 2px solid var(--border);
+      border: 1px solid var(--border);
       background: var(--bg-card);
       padding: 14px;
     }
 
     .pill {
       display: inline-flex;
-      border: 2px solid var(--border);
+      border: 1px solid var(--border);
       background: var(--bg-card-2);
       padding: 5px 10px;
       text-transform: uppercase;
@@ -237,9 +240,9 @@
     .part-btn.active .part-note { color: var(--bg); }
 
     .xml-code {
-      border: 2px solid var(--border);
-      background: var(--text);
-      color: #f3ecdf;
+      border: 1px solid var(--border);
+      background: #f7f7f7;
+      color: var(--text);
       padding: 14px;
       overflow-x: auto;
     }
@@ -252,13 +255,13 @@
     }
 
     .lessons-intro {
-      border: 2px solid var(--border);
+      border: 1px solid var(--s1000d-line);
       background: var(--bg-study);
       padding: 14px;
     }
 
     .lesson-nav {
-      border: 2px solid var(--border);
+      border: 1px solid var(--s1000d-line);
       background: var(--bg-study-2);
       padding: 14px;
     }
@@ -278,39 +281,39 @@
     .lesson-nav-btn:disabled {
       cursor: not-allowed;
       opacity: 0.55;
-      background: #e2d7c6;
-      color: #8c8379;
-      border-color: #8c8379;
+      background: #edf2ee;
+      color: #7b8192;
+      border-color: #7b8192;
     }
 
     .lesson-nav-btn.next:disabled {
-      background: #8c8379;
+      background: #7b8192;
       color: var(--bg);
     }
 
     .lesson-btn {
       width: 100%;
       text-align: left;
-      background: #efe6d8;
+      background: #ffffff;
     }
     .lesson-btn.active {
       background: var(--bg-active);
-      color: #f4ecdf;
+      color: #ffffff;
     }
     .lesson-btn.active .card-eyebrow { color: var(--accent-soft); }
 
     .lesson-card {
       cursor: pointer;
       transition: background 0.15s ease;
-      background: #ddd2c0;
+      background: #ffffff;
     }
-    .lesson-card.active { background: #f0e8db; }
-    .lesson-card:not(.active):hover { background: #e5dac9; }
+    .lesson-card.active { background: #ffffff; }
+    .lesson-card:not(.active):hover { background: #f6f6f2; }
 
     .lesson-label {
       display: inline-block;
-      border: 2px solid var(--border);
-      background: #e7ddcf;
+      border: 1px solid var(--border);
+      background: #f6f6f2;
       padding: 6px 10px;
       text-transform: uppercase;
       letter-spacing: 0.2em;
@@ -420,7 +423,7 @@
         bottom: 0;
         width: 186px;
         border-bottom: 0;
-        border-right: 2px solid var(--border);
+      border-right: 1px solid var(--border);
       }
 
       .header-inner {
@@ -586,37 +589,37 @@
               <rect width="520" height="360" fill="var(--bg-card-2)" />
 
               <!-- WHEELS -->
-              <circle cx="130" cy="230" r="85" fill="none" stroke="#2a2018" stroke-width="6"/>
-              <circle cx="130" cy="230" r="72" fill="none" stroke="#3a2e20" stroke-width="2"/>
-              <circle cx="130" cy="230" r="10" fill="#2a2018"/>
-              <line x1="130" y1="145" x2="130" y2="220" stroke="#3a2e20" stroke-width="1.5"/>
-              <line x1="130" y1="240" x2="130" y2="315" stroke="#3a2e20" stroke-width="1.5"/>
-              <line x1="45" y1="230" x2="120" y2="230" stroke="#3a2e20" stroke-width="1.5"/>
-              <line x1="140" y1="230" x2="215" y2="230" stroke="#3a2e20" stroke-width="1.5"/>
-              <line x1="70" y1="165" x2="123" y2="223" stroke="#3a2e20" stroke-width="1.5"/>
-              <line x1="137" y1="237" x2="190" y2="295" stroke="#3a2e20" stroke-width="1.5"/>
-              <line x1="190" y1="165" x2="137" y2="223" stroke="#3a2e20" stroke-width="1.5"/>
-              <line x1="123" y1="237" x2="70" y2="295" stroke="#3a2e20" stroke-width="1.5"/>
+              <circle cx="130" cy="230" r="85" fill="none" stroke="#151515" stroke-width="6"/>
+              <circle cx="130" cy="230" r="72" fill="none" stroke="#5f667a" stroke-width="2"/>
+              <circle cx="130" cy="230" r="10" fill="#151515"/>
+              <line x1="130" y1="145" x2="130" y2="220" stroke="#5f667a" stroke-width="1.5"/>
+              <line x1="130" y1="240" x2="130" y2="315" stroke="#5f667a" stroke-width="1.5"/>
+              <line x1="45" y1="230" x2="120" y2="230" stroke="#5f667a" stroke-width="1.5"/>
+              <line x1="140" y1="230" x2="215" y2="230" stroke="#5f667a" stroke-width="1.5"/>
+              <line x1="70" y1="165" x2="123" y2="223" stroke="#5f667a" stroke-width="1.5"/>
+              <line x1="137" y1="237" x2="190" y2="295" stroke="#5f667a" stroke-width="1.5"/>
+              <line x1="190" y1="165" x2="137" y2="223" stroke="#5f667a" stroke-width="1.5"/>
+              <line x1="123" y1="237" x2="70" y2="295" stroke="#5f667a" stroke-width="1.5"/>
 
-              <circle cx="390" cy="230" r="85" fill="none" stroke="#2a2018" stroke-width="6"/>
-              <circle cx="390" cy="230" r="72" fill="none" stroke="#3a2e20" stroke-width="2"/>
-              <circle cx="390" cy="230" r="10" fill="#2a2018"/>
-              <line x1="390" y1="145" x2="390" y2="220" stroke="#3a2e20" stroke-width="1.5"/>
-              <line x1="390" y1="240" x2="390" y2="315" stroke="#3a2e20" stroke-width="1.5"/>
-              <line x1="305" y1="230" x2="380" y2="230" stroke="#3a2e20" stroke-width="1.5"/>
-              <line x1="400" y1="230" x2="475" y2="230" stroke="#3a2e20" stroke-width="1.5"/>
-              <line x1="330" y1="165" x2="383" y2="223" stroke="#3a2e20" stroke-width="1.5"/>
-              <line x1="397" y1="237" x2="450" y2="295" stroke="#3a2e20" stroke-width="1.5"/>
-              <line x1="450" y1="165" x2="397" y2="223" stroke="#3a2e20" stroke-width="1.5"/>
-              <line x1="383" y1="237" x2="330" y2="295" stroke="#3a2e20" stroke-width="1.5"/>
+              <circle cx="390" cy="230" r="85" fill="none" stroke="#151515" stroke-width="6"/>
+              <circle cx="390" cy="230" r="72" fill="none" stroke="#5f667a" stroke-width="2"/>
+              <circle cx="390" cy="230" r="10" fill="#151515"/>
+              <line x1="390" y1="145" x2="390" y2="220" stroke="#5f667a" stroke-width="1.5"/>
+              <line x1="390" y1="240" x2="390" y2="315" stroke="#5f667a" stroke-width="1.5"/>
+              <line x1="305" y1="230" x2="380" y2="230" stroke="#5f667a" stroke-width="1.5"/>
+              <line x1="400" y1="230" x2="475" y2="230" stroke="#5f667a" stroke-width="1.5"/>
+              <line x1="330" y1="165" x2="383" y2="223" stroke="#5f667a" stroke-width="1.5"/>
+              <line x1="397" y1="237" x2="450" y2="295" stroke="#5f667a" stroke-width="1.5"/>
+              <line x1="450" y1="165" x2="397" y2="223" stroke="#5f667a" stroke-width="1.5"/>
+              <line x1="383" y1="237" x2="330" y2="295" stroke="#5f667a" stroke-width="1.5"/>
 
               <!-- FRAME -->
-              <line x1="310" y1="100" x2="200" y2="230" stroke="#2a2018" stroke-width="9" stroke-linecap="round"/>
-              <line x1="310" y1="100" x2="170" y2="120" stroke="#2a2018" stroke-width="7" stroke-linecap="round"/>
-              <line x1="200" y1="230" x2="170" y2="120" stroke="#2a2018" stroke-width="7" stroke-linecap="round"/>
-              <line x1="200" y1="230" x2="130" y2="230" stroke="#2a2018" stroke-width="6" stroke-linecap="round"/>
-              <line x1="170" y1="120" x2="130" y2="230" stroke="#2a2018" stroke-width="5" stroke-linecap="round"/>
-              <line x1="310" y1="100" x2="390" y2="230" stroke="#2a2018" stroke-width="7" stroke-linecap="round"/>
+              <line x1="310" y1="100" x2="200" y2="230" stroke="#151515" stroke-width="9" stroke-linecap="round"/>
+              <line x1="310" y1="100" x2="170" y2="120" stroke="#151515" stroke-width="7" stroke-linecap="round"/>
+              <line x1="200" y1="230" x2="170" y2="120" stroke="#151515" stroke-width="7" stroke-linecap="round"/>
+              <line x1="200" y1="230" x2="130" y2="230" stroke="#151515" stroke-width="6" stroke-linecap="round"/>
+              <line x1="170" y1="120" x2="130" y2="230" stroke="#151515" stroke-width="5" stroke-linecap="round"/>
+              <line x1="310" y1="100" x2="390" y2="230" stroke="#151515" stroke-width="7" stroke-linecap="round"/>
 
               <!-- CHAIN -->
               <path
@@ -626,30 +629,30 @@
                    C 149 252 176 257 199 258
                    C 214 259 226 248 226 235
                    C 226 222 214 211 199 212 Z"
-                fill="rgba(74,58,40,0.08)"
-                stroke="#4a3a28"
+                fill="rgba(31,95,91,0.08)"
+                stroke="#4b536a"
                 stroke-width="3"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
-              <ellipse cx="200" cy="235" rx="22" ry="22" fill="none" stroke="#4a3a28" stroke-width="3"/>
-              <ellipse cx="130" cy="232" rx="10" ry="10" fill="none" stroke="#4a3a28" stroke-width="2.5"/>
-              <path d="M 178 214 C 164 216 150 219 138 222" fill="none" stroke="#4a3a28" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M 178 257 C 164 254 150 249 138 243" fill="none" stroke="#4a3a28" stroke-width="2.5" stroke-linecap="round"/>
+              <ellipse cx="200" cy="235" rx="22" ry="22" fill="none" stroke="#4b536a" stroke-width="3"/>
+              <ellipse cx="130" cy="232" rx="10" ry="10" fill="none" stroke="#4b536a" stroke-width="2.5"/>
+              <path d="M 178 214 C 164 216 150 219 138 222" fill="none" stroke="#4b536a" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M 178 257 C 164 254 150 249 138 243" fill="none" stroke="#4b536a" stroke-width="2.5" stroke-linecap="round"/>
 
               <!-- SADDLE -->
-              <rect x="145" y="103" width="50" height="10" rx="5" fill="#2a2018"/>
-              <line x1="170" y1="112" x2="170" y2="133" stroke="#2a2018" stroke-width="5"/>
+              <rect x="145" y="103" width="50" height="10" rx="5" fill="#151515"/>
+              <line x1="170" y1="112" x2="170" y2="133" stroke="#151515" stroke-width="5"/>
 
               <!-- HANDLEBARS -->
-              <line x1="308" y1="96" x2="308" y2="68" stroke="#2a2018" stroke-width="5" stroke-linecap="round"/>
-              <line x1="292" y1="68" x2="324" y2="68" stroke="#2a2018" stroke-width="6" stroke-linecap="round"/>
-              <circle cx="292" cy="68" r="5" fill="#2a2018"/>
-              <circle cx="324" cy="68" r="5" fill="#2a2018"/>
+              <line x1="308" y1="96" x2="308" y2="68" stroke="#151515" stroke-width="5" stroke-linecap="round"/>
+              <line x1="292" y1="68" x2="324" y2="68" stroke="#151515" stroke-width="6" stroke-linecap="round"/>
+              <circle cx="292" cy="68" r="5" fill="#151515"/>
+              <circle cx="324" cy="68" r="5" fill="#151515"/>
 
               <!-- BRAKES -->
-              <rect x="380" y="148" width="8" height="16" rx="2" fill="#3a2e20" stroke="#2a2018" stroke-width="1.5"/>
-              <path d="M 312 72 Q 350 90 382 152" fill="none" stroke="#4a3a28" stroke-width="1.5" stroke-dasharray="4,3"/>
+              <rect x="380" y="148" width="8" height="16" rx="2" fill="#5f667a" stroke="#151515" stroke-width="1.5"/>
+              <path d="M 312 72 Q 350 90 382 152" fill="none" stroke="#4b536a" stroke-width="1.5" stroke-dasharray="4,3"/>
 
               <!-- CLICKABLE HOTSPOTS -->
               <circle id="hotspot-Wheels" cx="130" cy="230" r="88" fill="transparent" stroke="none" style="cursor:pointer;"/>
@@ -663,47 +666,47 @@
               <path d="M 306 64 Q 348 86 376 148 L 408 148 Q 360 94 318 60 Z" fill="transparent" stroke="none" style="cursor:pointer;" onclick="document.getElementById('hotspot-Brakes').dispatchEvent(new Event('click'))"/>
 
               <!-- HIGHLIGHT RINGS -->
-              <circle id="hl-Wheels-rear" cx="130" cy="230" r="88" fill="none" stroke="#8a3a24" stroke-width="3" opacity="0" stroke-dasharray="8,4"/>
-              <circle id="hl-Wheels-front" cx="390" cy="230" r="88" fill="none" stroke="#8a3a24" stroke-width="3" opacity="0" stroke-dasharray="8,4"/>
-              <rect id="hl-Frame" x="118" y="95" width="210" height="145" rx="4" fill="none" stroke="#8a3a24" stroke-width="3" opacity="0" stroke-dasharray="8,4"/>
-              <ellipse id="hl-Chain" cx="165" cy="235" rx="60" ry="32" fill="none" stroke="#8a3a24" stroke-width="3" opacity="0" stroke-dasharray="8,4"/>
-              <rect id="hl-Saddle" x="136" y="92" width="70" height="32" rx="4" fill="none" stroke="#8a3a24" stroke-width="3" opacity="0" stroke-dasharray="8,4"/>
-              <rect id="hl-Handlebars" x="278" y="54" width="60" height="52" rx="4" fill="none" stroke="#8a3a24" stroke-width="3" opacity="0" stroke-dasharray="8,4"/>
-              <rect id="hl-Brakes" x="368" y="134" width="36" height="44" rx="4" fill="none" stroke="#8a3a24" stroke-width="3" opacity="0" stroke-dasharray="8,4"/>
+              <circle id="hl-Wheels-rear" cx="130" cy="230" r="88" fill="none" stroke="#1f5f5b" stroke-width="3" opacity="0" stroke-dasharray="8,4"/>
+              <circle id="hl-Wheels-front" cx="390" cy="230" r="88" fill="none" stroke="#1f5f5b" stroke-width="3" opacity="0" stroke-dasharray="8,4"/>
+              <rect id="hl-Frame" x="118" y="95" width="210" height="145" rx="4" fill="none" stroke="#1f5f5b" stroke-width="3" opacity="0" stroke-dasharray="8,4"/>
+              <ellipse id="hl-Chain" cx="165" cy="235" rx="60" ry="32" fill="none" stroke="#1f5f5b" stroke-width="3" opacity="0" stroke-dasharray="8,4"/>
+              <rect id="hl-Saddle" x="136" y="92" width="70" height="32" rx="4" fill="none" stroke="#1f5f5b" stroke-width="3" opacity="0" stroke-dasharray="8,4"/>
+              <rect id="hl-Handlebars" x="278" y="54" width="60" height="52" rx="4" fill="none" stroke="#1f5f5b" stroke-width="3" opacity="0" stroke-dasharray="8,4"/>
+              <rect id="hl-Brakes" x="368" y="134" width="36" height="44" rx="4" fill="none" stroke="#1f5f5b" stroke-width="3" opacity="0" stroke-dasharray="8,4"/>
 
               <!-- Callout dots + labels along bottom strip -->
               <!-- Saddle -->
-              <circle id="dot-Saddle" cx="170" cy="108" r="5" fill="#8a3a24" opacity="0.5"/>
-              <line x1="170" y1="113" x2="100" y2="345" stroke="#8a3a24" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
-              <text id="lbl-Saddle" x="76" y="352" text-anchor="middle" font-size="10" fill="#6a5a4a" font-family="ui-sans-serif,system-ui,sans-serif" letter-spacing="0.08em" style="cursor:pointer;">SADDLE</text>
+              <circle id="dot-Saddle" cx="170" cy="108" r="5" fill="#1f5f5b" opacity="0.5"/>
+              <line x1="170" y1="113" x2="100" y2="345" stroke="#1f5f5b" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+              <text id="lbl-Saddle" x="76" y="352" text-anchor="middle" font-size="10" fill="#555555" font-family="ui-sans-serif,system-ui,sans-serif" letter-spacing="0.08em" style="cursor:pointer;">SADDLE</text>
 
               <!-- Handlebars -->
-              <circle id="dot-Handlebars" cx="308" cy="68" r="5" fill="#8a3a24" opacity="0.5"/>
-              <line x1="308" y1="73" x2="210" y2="345" stroke="#8a3a24" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
-              <text id="lbl-Handlebars" x="210" y="352" text-anchor="middle" font-size="10" fill="#6a5a4a" font-family="ui-sans-serif,system-ui,sans-serif" letter-spacing="0.08em" style="cursor:pointer;">HANDLEBARS</text>
+              <circle id="dot-Handlebars" cx="308" cy="68" r="5" fill="#1f5f5b" opacity="0.5"/>
+              <line x1="308" y1="73" x2="210" y2="345" stroke="#1f5f5b" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+              <text id="lbl-Handlebars" x="210" y="352" text-anchor="middle" font-size="10" fill="#555555" font-family="ui-sans-serif,system-ui,sans-serif" letter-spacing="0.08em" style="cursor:pointer;">HANDLEBARS</text>
 
               <!-- Frame -->
-              <circle id="dot-Frame" cx="250" cy="155" r="5" fill="#8a3a24" opacity="0.5"/>
-              <line x1="250" y1="160" x2="295" y2="345" stroke="#8a3a24" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
-              <text id="lbl-Frame" x="295" y="352" text-anchor="middle" font-size="10" fill="#6a5a4a" font-family="ui-sans-serif,system-ui,sans-serif" letter-spacing="0.08em" style="cursor:pointer;">FRAME</text>
+              <circle id="dot-Frame" cx="250" cy="155" r="5" fill="#1f5f5b" opacity="0.5"/>
+              <line x1="250" y1="160" x2="295" y2="345" stroke="#1f5f5b" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+              <text id="lbl-Frame" x="295" y="352" text-anchor="middle" font-size="10" fill="#555555" font-family="ui-sans-serif,system-ui,sans-serif" letter-spacing="0.08em" style="cursor:pointer;">FRAME</text>
 
               <!-- Chain -->
-              <circle id="dot-Chain" cx="165" cy="235" r="5" fill="#8a3a24" opacity="0.5"/>
-              <line x1="165" y1="240" x2="375" y2="345" stroke="#8a3a24" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
-              <text id="lbl-Chain" x="375" y="352" text-anchor="middle" font-size="10" fill="#6a5a4a" font-family="ui-sans-serif,system-ui,sans-serif" letter-spacing="0.08em" style="cursor:pointer;">CHAIN</text>
+              <circle id="dot-Chain" cx="165" cy="235" r="5" fill="#1f5f5b" opacity="0.5"/>
+              <line x1="165" y1="240" x2="375" y2="345" stroke="#1f5f5b" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+              <text id="lbl-Chain" x="375" y="352" text-anchor="middle" font-size="10" fill="#555555" font-family="ui-sans-serif,system-ui,sans-serif" letter-spacing="0.08em" style="cursor:pointer;">CHAIN</text>
 
               <!-- Brakes -->
-              <circle id="dot-Brakes" cx="385" cy="155" r="5" fill="#8a3a24" opacity="0.5"/>
-              <line x1="385" y1="160" x2="445" y2="345" stroke="#8a3a24" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
-              <text id="lbl-Brakes" x="445" y="352" text-anchor="middle" font-size="10" fill="#6a5a4a" font-family="ui-sans-serif,system-ui,sans-serif" letter-spacing="0.08em" style="cursor:pointer;">BRAKES</text>
+              <circle id="dot-Brakes" cx="385" cy="155" r="5" fill="#1f5f5b" opacity="0.5"/>
+              <line x1="385" y1="160" x2="445" y2="345" stroke="#1f5f5b" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+              <text id="lbl-Brakes" x="445" y="352" text-anchor="middle" font-size="10" fill="#555555" font-family="ui-sans-serif,system-ui,sans-serif" letter-spacing="0.08em" style="cursor:pointer;">BRAKES</text>
 
               <!-- Wheels label (no line needed, label bottom center of each wheel) -->
-              <text id="lbl-Wheels" x="130" y="326" text-anchor="middle" font-size="10" fill="#6a5a4a" font-family="ui-sans-serif,system-ui,sans-serif" letter-spacing="0.08em" style="cursor:pointer;">WHEELS</text>
+              <text id="lbl-Wheels" x="130" y="326" text-anchor="middle" font-size="10" fill="#555555" font-family="ui-sans-serif,system-ui,sans-serif" letter-spacing="0.08em" style="cursor:pointer;">WHEELS</text>
             </svg>
           </div>
 
           <!-- Info panel below SVG, full width -->
-          <div id="selected-part-panel" style="border-top:2px solid var(--border);"></div>
+          <div id="selected-part-panel" style="border-top:1px solid var(--border);"></div>
         </div>
 
         <!-- hidden, kept for JS compatibility -->
@@ -712,7 +715,7 @@
     </div>
   </section>
 
-  <section id="xml" class="border-top border-bottom" style="background:#ddd1be;">
+  <section id="xml" class="border-top border-bottom" style="background:var(--bg-alt);">
     <div class="container two-col-equal">
       <div>
         <div class="section-eyebrow">Simple XML example</div>
@@ -730,7 +733,7 @@
         </div>
       </div>
       <div class="xml-code">
-        <div class="card-eyebrow" style="color:#d8b49d;">Simplified data module preview</div>
+        <div class="card-eyebrow">Simplified data module preview</div>
         <pre id="xml-example"></pre>
       </div>
     </div>
@@ -747,7 +750,7 @@
       <div class="mt-10">
         <div class="card inner-mid" style="padding:12px;">
           <div class="card-eyebrow">Example DMC — bicycle brake adjustment</div>
-          <div id="dmc-display" style="margin-top:12px;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono',monospace;font-size:clamp(0.68rem,1.35vw,0.95rem);display:flex;flex-wrap:wrap;gap:0;border:2px solid var(--border);background:var(--text);"></div>
+          <div id="dmc-display" style="margin-top:12px;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono',monospace;font-size:clamp(0.68rem,1.35vw,0.95rem);display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--border);background:#f7f7f7;"></div>
           <div id="dmc-full" style="display:none;">Click a segment above to see what it means.</div>
         </div>
       </div>
@@ -778,7 +781,7 @@
     <div class="container">
       <div class="lessons-intro">
         <div class="max-3xl">
-          <div class="section-eyebrow" style="color:#7a3e2b;">Guided lessons</div>
+          <div class="section-eyebrow" style="color:#1f5f5b;">Guided lessons</div>
           <h2 class="section-title">Learn S1000D step by step</h2>
           <p class="lead">These lessons are designed for beginners who want a more guided path. Each lesson has one main idea, one clear goal, and one reflection prompt.</p>
         </div>
@@ -823,7 +826,7 @@
           id="infocode-search"
           type="text"
           placeholder="Search by code, name, or keyword…"
-          style="width:100%;border:2px solid var(--border);background:var(--bg);color:var(--text);padding:14px 16px;font:inherit;font-size:15px;outline:none;"
+          style="width:100%;border:1px solid var(--border);background:var(--bg);color:var(--text);padding:14px 16px;font:inherit;font-size:15px;outline:none;"
         />
       </div>
 
@@ -851,12 +854,12 @@
     </div>
   </section>
 
-  <section id="fullfile" class="border-top border-bottom" style="background:#1c1713;">
+  <section id="fullfile" class="border-top border-bottom" style="background:var(--s1000d);">
     <div class="container">
       <div class="max-3xl">
-        <div class="section-eyebrow" style="color:#d8b49d;">Full bicycle file</div>
-        <h2 class="section-title" style="color:#f0e8db;">Three data modules side by side</h2>
-        <p class="lead" style="color:#b0a090;">This is what a small S1000D project actually looks like. Three modules — a description, an inspection, and an adjustment — together covering one bicycle system. Click any highlighted element to see what it does.</p>
+        <div class="section-eyebrow">Full bicycle file</div>
+        <h2 class="section-title">Three data modules side by side</h2>
+        <p class="lead" style="color:#303030;">This is what a small S1000D project actually looks like. Three modules — a description, an inspection, and an adjustment — together covering one bicycle system. Click any highlighted element to see what it does.</p>
       </div>
 
       <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:28px;" id="fullfile-module-tabs"></div>
@@ -866,33 +869,33 @@
       <div id="fullfile-tooltip" style="
         display:none;
         margin-top:16px;
-        border:2px solid #8a3a24;
-        background:#2a1f18;
+        border:1px solid var(--border);
+        background:#ffffff;
         padding:16px 18px;
-        color:#e8dcc8;
+        color:#303030;
       "></div>
 
-      <div class="mt-10" style="border:2px solid #3a2e26;padding:18px;">
-        <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.25em;color:#d8b49d;margin-bottom:16px;">What these three modules together show</div>
+      <div class="mt-10" style="border:1px solid var(--s1000d-line);background:#ffffff;padding:18px;">
+        <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.25em;color:var(--accent);margin-bottom:16px;">What these three modules together show</div>
         <div style="display:grid;gap:12px;">
-          <div style="border:2px solid #3a2e26;background:#241a14;padding:16px;">
-            <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.15em;color:#8a3a24;margin-bottom:8px;">040 — Description</div>
-            <div style="font-size:14px;color:#b0a090;line-height:1.7;">Explains what the braking system is and how its parts relate. This is reference information — not a task.</div>
+          <div style="border:1px solid var(--s1000d-line);background:#fffaf0;padding:16px;">
+            <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.15em;color:#1f5f5b;margin-bottom:8px;">040 — Description</div>
+            <div style="font-size:14px;color:#303030;line-height:1.7;">Explains what the braking system is and how its parts relate. This is reference information — not a task.</div>
           </div>
-          <div style="border:2px solid #3a2e26;background:#241a14;padding:16px;">
-            <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.15em;color:#3a6a4a;margin-bottom:8px;">280 — Inspection</div>
-            <div style="font-size:14px;color:#b0a090;line-height:1.7;">Tells a technician how to inspect brake pad wear. This is a maintenance task with a clear pass/fail outcome.</div>
+          <div style="border:1px solid var(--s1000d-line);background:#fffaf0;padding:16px;">
+            <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.15em;color:#1f5f5b;margin-bottom:8px;">280 — Inspection</div>
+            <div style="font-size:14px;color:#303030;line-height:1.7;">Tells a technician how to inspect brake pad wear. This is a maintenance task with a clear pass/fail outcome.</div>
           </div>
-          <div style="border:2px solid #3a2e26;background:#241a14;padding:16px;">
-            <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.15em;color:#3a4a8a;margin-bottom:8px;">720 — Adjustment</div>
-            <div style="font-size:14px;color:#b0a090;line-height:1.7;">Walks through the steps to adjust rear brake cable tension. A procedural task module with numbered steps.</div>
+          <div style="border:1px solid var(--s1000d-line);background:#fffaf0;padding:16px;">
+            <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.15em;color:#1f5f5b;margin-bottom:8px;">720 — Adjustment</div>
+            <div style="font-size:14px;color:#303030;line-height:1.7;">Walks through the steps to adjust rear brake cable tension. A procedural task module with numbered steps.</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="brex" class="border-top border-bottom" style="background:var(--bg-card-2);">
+  <section id="brex" class="border-top border-bottom" style="background:var(--bg-alt);">
     <div class="container">
       <div class="max-3xl">
         <div class="section-eyebrow">BREX</div>
@@ -1227,7 +1230,7 @@
         id: "mic",
         label: "DMC",
         value: "DMC",
-        color: "#5a4a3a",
+        color: "#555555",
         name: "Prefix",
         plain: "Marks the start of a Data Module Code.",
         explain: "Every DMC begins with 'DMC' followed by a hyphen. It tells any system or person reading it that what follows is a structured module address — not a free-form filename."
@@ -1236,7 +1239,7 @@
         id: "modelIdentCode",
         label: "BIKE",
         value: "BIKE",
-        color: "#7a3e2b",
+        color: "#1f5f5b",
         name: "Model Identification Code",
         plain: "Identifies the product or project.",
         explain: "This is a short code — up to 14 characters — that names the product family or project. In a real project it might be an aircraft model code, a vehicle type, or a system designation. Here it is BIKE for the bicycle example."
@@ -1245,7 +1248,7 @@
         id: "systemDiffCode",
         label: "A",
         value: "A",
-        color: "#5a4a3a",
+        color: "#555555",
         name: "System Difference Code",
         plain: "Distinguishes between product variants.",
         explain: "This one character separates variants of the same model. If a bicycle has two main configurations — say standard and performance — they might use A and B. It keeps related products from colliding in the same code space."
@@ -1254,7 +1257,7 @@
         id: "systemCode",
         label: "D00",
         value: "D00",
-        color: "#7a3e2b",
+        color: "#1f5f5b",
         name: "System Code",
         plain: "Identifies the main system on the product.",
         explain: "A three-character code that corresponds to a system in the product breakdown structure. For a bicycle, D00 could represent the braking system. In an aircraft project this would follow the ATA chapter structure."
@@ -1263,7 +1266,7 @@
         id: "subSystemCode",
         label: "00",
         value: "00",
-        color: "#5a4a3a",
+        color: "#555555",
         name: "Sub-system and Sub-sub-system Code",
         plain: "Narrows down to a specific sub-system.",
         explain: "Two characters identifying the sub-system within the main system. For brakes this could distinguish the front brake sub-system from the rear. 00 typically means the system as a whole rather than a specific sub-part."
@@ -1272,7 +1275,7 @@
         id: "assyCode",
         label: "00A",
         value: "00A",
-        color: "#7a3e2b",
+        color: "#1f5f5b",
         name: "Assembly Code",
         plain: "Points to a specific assembly or component.",
         explain: "Four characters that identify a part, assembly, or zone on the product. This allows the DMC to pinpoint whether a module applies to the whole brake assembly or one specific component such as the cable anchor or caliper."
@@ -1281,7 +1284,7 @@
         id: "disassyCode",
         label: "000",
         value: "000",
-        color: "#5a4a3a",
+        color: "#555555",
         name: "Disassembly Code",
         plain: "Handles variations in how something is removed or accessed.",
         explain: "Three characters used to distinguish modules that cover the same assembly but differ in approach — for example, a standard removal versus a field-expedient removal. 000 is often used when no specific disassembly variant applies."
@@ -1290,7 +1293,7 @@
         id: "infoCode",
         label: "720",
         value: "720",
-        color: "#7a3e2b",
+        color: "#1f5f5b",
         name: "Information Code",
         plain: "Describes what type of information the module contains.",
         explain: "This three-character code is one of the most important segments. It tells you the information type — 720 means 'Adjustment/Test'. Other common codes include 040 (Description), 200 (Fault isolation), and 520 (Removal). The code makes the content type machine-readable."
@@ -1299,7 +1302,7 @@
         id: "infoCodeVariant",
         label: "A",
         value: "A",
-        color: "#5a4a3a",
+        color: "#555555",
         name: "Information Code Variant",
         plain: "A single character to separate modules with the same info code.",
         explain: "If a project needs two modules with the same information code for the same assembly, this variant letter distinguishes them. A is the default first variant. It is a way to extend the code space without changing any other segment."
@@ -1308,7 +1311,7 @@
         id: "itemLocationCode",
         label: "A",
         value: "A",
-        color: "#7a3e2b",
+        color: "#1f5f5b",
         name: "Item Location Code",
         plain: "Tells where the task is performed.",
         explain: "A single character indicating the location context. A means 'on aircraft' or in this case on the vehicle as it normally sits. Other values cover workshop (C), overhaul (D), and so on. For a bicycle project, this would typically be A for standard use."
@@ -1342,7 +1345,7 @@
           data-seg="${key}"
           style="
             background:${isActive ? seg.color : 'transparent'};
-            color:${isActive ? '#f4ecdf' : '#e8dcc8'};
+            color:${isActive ? '#ffffff' : '#303030'};
             border:none;
             padding:10px ${i === 0 ? '12px' : '8px'};
             font:inherit;
@@ -1352,10 +1355,10 @@
             letter-spacing:0.05em;
             font-weight:700;
             transition:background 0.15s;
-            border-right: ${sep === '-' ? '1px solid #3a3028' : 'none'};
+            border-right: ${sep === '-' ? '1px solid #d8d8d8' : 'none'};
             position:relative;
           "
-        >${seg.value}${sep === '-' ? '<span style="color:#6a5a4a;margin-left:6px;">-</span>' : ''}</button>`;
+        >${seg.value}${sep === '-' ? '<span style="color:#555555;margin-left:6px;">-</span>' : ''}</button>`;
       }).join("");
 
       display.querySelectorAll(".dmc-seg-btn").forEach(btn => {
@@ -1380,9 +1383,9 @@
         const isActive = activeDmcSegment === seg.id;
         return `
           <button class="dmc-card-btn" data-seg="${seg.id}" style="
-            border:2px solid var(--border);
+            border:1px solid var(--border);
             background:${isActive ? seg.color : 'var(--bg-card)'};
-            color:${isActive ? '#f4ecdf' : 'var(--text)'};
+            color:${isActive ? '#ffffff' : 'var(--text)'};
             padding:12px;
             text-align:left;
             cursor:pointer;
@@ -1390,9 +1393,9 @@
             transition:background 0.15s;
           ">
             <div style="font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono',monospace;font-size:1rem;font-weight:700;letter-spacing:0.05em;">${seg.value}</div>
-            <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.18em;margin-top:6px;color:${isActive ? '#d8b49d' : 'var(--accent)'};">${seg.name}</div>
-            <div style="font-size:12px;margin-top:6px;color:${isActive ? '#e8dcc8' : 'var(--text-soft)'};">${seg.plain}</div>
-            ${isActive ? `<div style="font-size:11px;margin-top:8px;color:#d8ccb8;border-top:1px solid rgba(255,255,255,0.15);padding-top:8px;">${seg.explain}</div>` : ''}
+            <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.18em;margin-top:6px;color:${isActive ? '#e8f1ef' : 'var(--accent)'};">${seg.name}</div>
+            <div style="font-size:12px;margin-top:6px;color:${isActive ? '#ffffff' : 'var(--text-soft)'};">${seg.plain}</div>
+            ${isActive ? `<div style="font-size:11px;margin-top:8px;color:#ffffff;border-top:1px solid rgba(255,255,255,0.35);padding-top:8px;">${seg.explain}</div>` : ''}
           </button>
         `;
       }).join("");
@@ -1457,7 +1460,7 @@
       el.innerHTML = infocodeCategories.map(cat => {
         const isActive = activeInfoCategory === cat.code;
         return `<button class="infocode-filter-btn" data-cat="${cat.code}" style="
-          border:2px solid var(--border);
+          border:1px solid var(--border);
           background:${isActive ? 'var(--text)' : 'var(--bg)'};
           color:${isActive ? 'var(--bg)' : 'var(--text)'};
           padding:8px 16px;font:inherit;font-size:13px;cursor:pointer;
@@ -1484,17 +1487,17 @@
       }
       grid.innerHTML = filtered.map(ic => {
         const isActive = activeInfoCode === ic.code;
-        const catColors = { "0": "#4a5a3a", "2": "#7a3e2b", "5": "#3a4a6a", "7": "#5a3a6a", "9": "#3a5a5a" };
+        const catColors = { "0": "#1f5f5b", "2": "#1f5f5b", "5": "#1f5f5b", "7": "#1f5f5b", "9": "#1f5f5b" };
         const col = catColors[ic.categoryCode] || "var(--accent)";
         return `<button class="infocode-card-btn" data-code="${ic.code}" style="
-          border:2px solid var(--border);
+          border:1px solid var(--border);
           background:${isActive ? col : 'var(--bg-card)'};
-          color:${isActive ? '#f4ecdf' : 'var(--text)'};
+          color:${isActive ? '#ffffff' : 'var(--text)'};
           min-height:92px;padding:12px 16px;text-align:left;cursor:pointer;font:inherit;transition:background 0.15s;
         ">
           <div style="display:flex;align-items:baseline;gap:10px;">
             <span style="font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono',monospace;font-size:1.15rem;font-weight:700;">${ic.code}</span>
-            <span style="font-size:10px;text-transform:uppercase;letter-spacing:0.14em;color:${isActive ? '#d8b49d' : 'var(--accent)'};">${ic.category}</span>
+            <span style="font-size:10px;text-transform:uppercase;letter-spacing:0.14em;color:${isActive ? '#e8f1ef' : 'var(--accent)'};">${ic.category}</span>
           </div>
           <div style="font-size:13.5px;font-weight:600;margin-top:4px;line-height:1.35;">${ic.name}</div>
         </button>`;
@@ -1513,21 +1516,21 @@
       if (!activeInfoCode) { el.innerHTML = ""; return; }
       const ic = infoCodes.find(i => i.code === activeInfoCode);
       if (!ic) { el.innerHTML = ""; return; }
-      const catColors = { "0": "#4a5a3a", "2": "#7a3e2b", "5": "#3a4a6a", "7": "#5a3a6a", "9": "#3a5a5a" };
+      const catColors = { "0": "#1f5f5b", "2": "#1f5f5b", "5": "#1f5f5b", "7": "#1f5f5b", "9": "#1f5f5b" };
       const col = catColors[ic.categoryCode] || "var(--accent)";
       el.innerHTML = `
-        <div style="border:2px solid var(--border);background:${col};color:#f4ecdf;padding:22px 24px;">
+        <div style="border:1px solid var(--border);background:var(--accent-soft);color:var(--text);padding:22px 24px;">
           <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;">
             <span style="font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono',monospace;font-size:2rem;font-weight:700;letter-spacing:0.05em;">${ic.code}</span>
             <span style="font-size:1.18rem;font-weight:600;">${ic.name}</span>
           </div>
           <div style="margin-top:6px;font-size:12px;text-transform:uppercase;letter-spacing:0.2em;opacity:0.7;">${ic.category}</div>
           <div style="margin-top:20px;display:grid;gap:16px;grid-template-columns:1fr;">
-            <div style="border:2px solid rgba(255,255,255,0.15);padding:18px;">
+            <div style="border:1px solid var(--border);background:#ffffff;padding:18px;">
               <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.2em;opacity:0.65;margin-bottom:10px;">Bicycle example</div>
               <div style="font-size:15px;line-height:1.7;opacity:0.9;">${ic.bicycle}</div>
             </div>
-            <div style="border:2px solid rgba(255,255,255,0.15);padding:18px;">
+            <div style="border:1px solid var(--border);background:#ffffff;padding:18px;">
               <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.2em;opacity:0.65;margin-bottom:10px;">In a real DMC</div>
               <div style="font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono',monospace;font-size:13px;opacity:0.85;line-height:1.8;">DMC-BIKE-A-D00-00-00A-000-<strong>${ic.code}</strong>A-A</div>
             </div>
@@ -1541,7 +1544,7 @@
         id: "040",
         label: "040 — Description",
         dmc: "DMC-BIKE-A-D00-00-00A-000-040A-A",
-        color: "#7a3e2b",
+        color: "#1f5f5b",
         lines: [
           { text: '&lt;dmodule&gt;', key: "dmodule", indent: 0 },
           { text: '', indent: 0 },
@@ -1608,7 +1611,7 @@
         id: "280",
         label: "280 — Inspection",
         dmc: "DMC-BIKE-A-D00-00-00A-000-280A-A",
-        color: "#3a6a4a",
+        color: "#1f5f5b",
         lines: [
           { text: '&lt;dmodule&gt;', indent: 0 },
           { text: '', indent: 0 },
@@ -1684,7 +1687,7 @@
         id: "720",
         label: "720 — Adjustment",
         dmc: "DMC-BIKE-A-D00-00-00A-000-720A-A",
-        color: "#3a4a8a",
+        color: "#1f5f5b",
         lines: [
           { text: '&lt;dmodule&gt;', indent: 0 },
           { text: '', indent: 0 },
@@ -1817,9 +1820,9 @@
       el.innerHTML = fullFileModules.map(m => {
         const isActive = m.id === activeFullFileModule;
         return `<button class="fullfile-tab-btn" data-mod="${m.id}" style="
-          border:2px solid ${isActive ? m.color : '#3a2e26'};
+          border:1px solid ${isActive ? m.color : '#d8d8d8'};
           background:${isActive ? m.color : 'transparent'};
-          color:${isActive ? '#f4ecdf' : '#b0a090'};
+          color:${isActive ? '#ffffff' : '#303030'};
           padding:10px 20px;font:inherit;font-size:13px;cursor:pointer;
           text-transform:uppercase;letter-spacing:0.1em;font-weight:600;
           transition:all 0.15s;
@@ -1840,12 +1843,12 @@
       const el = document.getElementById("fullfile-viewer");
       const mod = fullFileModules.find(m => m.id === activeFullFileModule);
       el.innerHTML = `
-        <div style="border:2px solid #3a2e26;background:#0f0d0a;padding:0;overflow-x:auto;margin-top:0;border-top:none;">
-          <div style="padding:12px 20px;border-bottom:2px solid #3a2e26;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
-            <span style="font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono',monospace;font-size:12px;color:#6a5a4a;">${mod.dmc}</span>
+        <div style="border:1px solid #d8d8d8;background:#ffffff;padding:0;overflow-x:auto;margin-top:0;">
+          <div style="padding:12px 20px;border-bottom:1px solid #d8d8d8;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+            <span style="font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono',monospace;font-size:12px;color:#555555;">${mod.dmc}</span>
             <span style="font-size:11px;text-transform:uppercase;letter-spacing:0.15em;color:${mod.color};">${mod.label}</span>
           </div>
-          <pre style="margin:0;padding:20px 24px;font-size:13px;line-height:2;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono',monospace;color:#c8bca8;">${
+          <pre style="margin:0;padding:20px 24px;font-size:13px;line-height:2;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono',monospace;color:#303030;">${
             mod.lines.map((line, i) => {
               if (!line.text) return '<span style="display:block;height:8px;"></span>';
               const isActive = activeFullFileLine === (line.key || null);
@@ -1857,11 +1860,11 @@
                   style="display:block;cursor:pointer;padding:1px 6px;margin:0 -6px;border-radius:0;
                     background:${isActive ? mod.color + '33' : 'transparent'};
                     border-left:${isActive ? '3px solid ' + mod.color : '3px solid transparent'};
-                    color:${isActive ? '#f0e8db' : '#a8c8a0'};
+                    color:${isActive ? '#151515' : '#1f5f5b'};
                     transition:background 0.12s;
                   " title="Click to learn more">${line.text}</span>`;
               }
-              return `<span style="display:block;color:#786a5a;">${line.text}</span>`;
+              return `<span style="display:block;color:#8b89a0;">${line.text}</span>`;
             }).join("")
           }</pre>
         </div>
@@ -1889,7 +1892,7 @@
       el.style.borderColor = mod.color;
       el.innerHTML = `
         <div style="font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono',monospace;font-size:13px;color:${mod.color};margin-bottom:10px;">${exp.title}</div>
-        <div style="font-size:14px;line-height:1.75;color:#c8bca8;">${exp.text}</div>
+        <div style="font-size:14px;line-height:1.75;color:#303030;">${exp.text}</div>
       `;
     }
 
@@ -2001,15 +2004,15 @@
       el.innerHTML = brexRules.map(rule => {
         const isActive = activeBrexRule === rule.id;
         return `<button class="brex-rule-btn" data-rule="${rule.id}" style="
-          border:2px solid var(--border);
-          background:${isActive ? 'var(--text)' : 'var(--bg)'};
-          color:${isActive ? 'var(--bg)' : 'var(--text)'};
+          border:1px solid var(--border);
+          background:${isActive ? 'var(--accent-soft)' : 'var(--bg)'};
+          color:var(--text);
           padding:16px 20px;text-align:left;cursor:pointer;font:inherit;
           transition:background 0.15s;width:100%;
         ">
-          <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.2em;color:${isActive ? 'var(--bg-card-2)' : 'var(--accent)'};">Rule</div>
+          <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.2em;color:var(--accent);">Rule</div>
           <div style="font-weight:700;margin-top:6px;">${rule.label}</div>
-          <div style="font-size:13px;margin-top:4px;color:${isActive ? 'var(--bg-card)' : 'var(--text-soft)'};">${rule.summary}</div>
+          <div style="font-size:13px;margin-top:4px;color:var(--text-soft);">${rule.summary}</div>
         </button>`;
       }).join("");
       el.querySelectorAll(".brex-rule-btn").forEach(btn => {
@@ -2035,7 +2038,7 @@
             <div class="text-soft" style="margin-top:10px;font-size:14px;line-height:1.75;">${rule.summary}</div>
           </div>
           <div class="xml-code" style="padding:20px 24px;">
-            <div class="card-eyebrow" style="color:#d8b49d;margin-bottom:12px;">BREX XML expression</div>
+            <div class="card-eyebrow" style="margin-bottom:12px;">BREX XML expression</div>
             <pre style="margin:0;font-size:12px;line-height:1.9;">${rule.xml}</pre>
           </div>
           <div class="lesson-detail-box inner-light">
@@ -2065,7 +2068,7 @@
 
     function renderConcepts() {
       conceptsGridEl.innerHTML = concepts.map(item => `
-        <div class="card" style="background:#d9cdbb;">
+        <div class="card" style="background:#ffffff;">
           <h3 style="margin:0;font-size:1.18rem;">${item.term}</h3>
           <div class="card-eyebrow" style="margin-top:12px;">${item.plain}</div>
           <p class="text-soft">${item.explain}</p>
@@ -2136,15 +2139,15 @@
       selectedPartPanelEl.innerHTML = `
           <div style="display:grid;gap:0;grid-template-columns:1fr;" id="part-info-strip">
           <div class="part-info-grid" style="gap:0;">
-            <div class="part-info-cell" style="border-right:2px solid var(--border);background:var(--text);color:var(--bg);padding:20px 24px;min-width:120px;">
+            <div class="part-info-cell" style="border-right:1px solid var(--border);background:var(--accent);color:var(--bg);padding:20px 24px;min-width:120px;">
               <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.2em;color:var(--bg-card-2);margin-bottom:6px;">Selected</div>
               <div style="font-size:1.4rem;font-weight:700;">${selectedPart.name}</div>
             </div>
-            <div class="part-info-cell" style="border-right:2px solid var(--border);padding:20px 24px;">
+            <div class="part-info-cell" style="border-right:1px solid var(--border);padding:20px 24px;">
               <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.2em;color:var(--accent);margin-bottom:8px;">Why it matters</div>
               <div style="font-size:14px;line-height:1.6;color:var(--text-soft);">${selectedPart.whyItMatters}</div>
             </div>
-            <div class="part-info-cell" style="border-right:2px solid var(--border);padding:20px 24px;">
+            <div class="part-info-cell" style="border-right:1px solid var(--border);padding:20px 24px;">
               <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.2em;color:var(--accent);margin-bottom:8px;">Example module types</div>
               <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:flex-start;">
                 ${selectedPart.exampleModules.map(item => `<span style="display:inline-flex;align-items:center;padding:6px 10px;border:1.5px solid var(--border);font-size:12px;line-height:1.2;color:var(--text-soft);background:rgba(255,255,255,0.22);">${item}</span>`).join('')}
@@ -2164,7 +2167,7 @@
       ["Wheels","Frame","Chain","Saddle","Handlebars","Brakes"].forEach(name => {
         const lbl = document.getElementById("lbl-" + name);
         const dot = document.getElementById("dot-" + name);
-        if (lbl) lbl.setAttribute("fill", name === selectedPart.name ? "#8a3a24" : "#6a5a4a");
+        if (lbl) lbl.setAttribute("fill", name === selectedPart.name ? "#1f5f5b" : "#555555");
         if (lbl) lbl.setAttribute("font-weight", name === selectedPart.name ? "700" : "400");
         if (dot) dot.setAttribute("opacity", name === selectedPart.name ? "1" : "0.35");
       });
